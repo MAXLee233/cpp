@@ -1,0 +1,48 @@
+`algo.h`
+
+// 该文件包含了 C++ STL 中的算法库的头文件和相关函数声明，
+1. **查找算法**:
+   - `all_of`, `any_of`, `none_of`: 检查区间内元素是否满足给定条件。
+
+   - `count`, `count_if`: 统计区间内满足给定条件的元素数量。
+   - `find`, `find_if`, `find_if_not`: 在区间内查找满足给定条件的元素。
+   
+   - `search`, `search_n`: 在区间内查找特定子序列。
+   - `find_end`, `find_first_of`: 特定的查找操作。
+   - `adjacent_find`: 查找相邻相等的元素。
+
+2. **遍历和操作**:
+   - `for_each`: 对区间内的每个元素执行某个函数。
+   - `generate`, `generate_n`: 使用生成器为区间内的元素赋值。
+   - `transform`: 对区间内的元素进行变换并存储结果。
+   - `swap_ranges`: 交换两个区间内的元素。
+
+3. **移除和替换**:
+   - `remove`, `remove_copy`, `remove_if`, `remove_copy_if`: 移除或复制满足给定条件的元素。
+   - `replace`, `replace_copy`, `replace_if`, `replace_copy_if`: 替换满足给定条件的元素。
+
+4. **排序和重组**:
+   - `sort`: 对区间内的元素进行排序。
+   - `nth_element`: 使第 n 个元素位于正确的位置。
+   - `partial_sort`, `partial_sort_copy`: 对区间内的部分元素进行排序。
+   - `inplace_merge`: 合并两个有序区间。
+   - `merge`, `merge_backward`: 合并两个有序区间到另一个区间。
+   - `rotate`, `rotate_copy`: 旋转区间内的元素。
+   - `next_permutation`, `prev_permutation`: 生成下一个或上一个排列组合。
+
+5. **其他**:
+   - `lower_bound`, `upper_bound`, `binary_search`, `equal_range`: 二分查找相关操作。
+   - `is_sorted`, `is_heap`, `is_permutation`: 检查区间是否满足特定条件。
+   - `unique`, `unique_copy`: 移除或复制重复元素。
+
+### 头文件依赖
+
+- `#include <cstddef>`
+- `#include <ctime>`
+- `#include "algobase.h"`
+- `#include "memory.h"`
+- `#include "heap_algo.h"`
+- `#include "functional.h"`
+
+### 其他注意事项
+

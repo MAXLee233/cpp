@@ -1,0 +1,59 @@
+cmake_minimum_required(VERSION 3.31)
+project(MyTinySTL_master)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(MyTinySTL-master/MyTinySTL)
+include_directories(MyTinySTL-master/Test)
+include_directories(MyTinySTL-master/Test/Lib)
+include_directories(MyTinySTL-master/Test/Lib/redbud)
+include_directories(MyTinySTL-master/Test/Lib/redbud/io)
+
+add_executable(MyTinySTL_master
+        MyTinySTL-master/MyTinySTL/algo.h
+        MyTinySTL-master/MyTinySTL/algobase.h
+        MyTinySTL-master/MyTinySTL/algorithm.h
+        MyTinySTL-master/MyTinySTL/alloc.h
+        MyTinySTL-master/MyTinySTL/allocator.h
+        MyTinySTL-master/MyTinySTL/astring.h
+        MyTinySTL-master/MyTinySTL/basic_string.h
+        MyTinySTL-master/MyTinySTL/construct.h
+        MyTinySTL-master/MyTinySTL/deque.h
+        MyTinySTL-master/MyTinySTL/exceptdef.h
+        MyTinySTL-master/MyTinySTL/functional.h
+        MyTinySTL-master/MyTinySTL/hashtable.h
+        MyTinySTL-master/MyTinySTL/heap_algo.h
+        MyTinySTL-master/MyTinySTL/iterator.h
+        MyTinySTL-master/MyTinySTL/list.h
+        MyTinySTL-master/MyTinySTL/map.h
+        MyTinySTL-master/MyTinySTL/memory.h
+        MyTinySTL-master/MyTinySTL/numeric.h
+        MyTinySTL-master/MyTinySTL/queue.h
+        MyTinySTL-master/MyTinySTL/rb_tree.h
+        MyTinySTL-master/MyTinySTL/set.h
+        MyTinySTL-master/MyTinySTL/set_algo.h
+        MyTinySTL-master/MyTinySTL/stack.h
+        MyTinySTL-master/MyTinySTL/stream_iterator.h
+        MyTinySTL-master/MyTinySTL/type_traits.h
+        MyTinySTL-master/MyTinySTL/uninitialized.h
+        MyTinySTL-master/MyTinySTL/unordered_map.h
+        MyTinySTL-master/MyTinySTL/unordered_set.h
+        MyTinySTL-master/MyTinySTL/util.h
+        MyTinySTL-master/MyTinySTL/vector.h
+        MyTinySTL-master/Test/Lib/redbud/io/color.h
+        MyTinySTL-master/Test/Lib/redbud/platform.h
+        MyTinySTL-master/Test/algorithm_performance_test.h
+        MyTinySTL-master/Test/algorithm_test.h
+        MyTinySTL-master/Test/deque_test.h
+        MyTinySTL-master/Test/iterator_test.h
+        MyTinySTL-master/Test/list_test.h
+        MyTinySTL-master/Test/map_test.h
+        MyTinySTL-master/Test/queue_test.h
+        MyTinySTL-master/Test/set_test.h
+        MyTinySTL-master/Test/stack_test.h
+        MyTinySTL-master/Test/string_test.h
+        MyTinySTL-master/Test/test.cpp
+        MyTinySTL-master/Test/test.h
+        MyTinySTL-master/Test/unordered_map_test.h
+        MyTinySTL-master/Test/unordered_set_test.h
+        MyTinySTL-master/Test/vector_test.h)
